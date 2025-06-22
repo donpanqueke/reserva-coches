@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureRent - Reservas de Autos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <h1>FutureRent</h1>
+                <span class="tagline">Conduciendo hacia el futuro</span>
+           
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <section class="hero">
+                <h2 class="hero-title">Reserva tu Vehículo del Futuro</h2>
+                <p class="hero-subtitle">Experimenta la conducción de próxima generación</p>
+            </section>
+
+            <!-- Reservation Form -->
+            <section class="reservation-section">
+                <div class="form-container">
+                    <h3 class="form-title">Configurar Reserva</h3>
+                    
+                    <form class="reservation-form" id="reservationForm">
+                        <!-- Vehicle Selection -->
+                        <div class="form-group">
+                            <label class="form-label">Tipo de Vehículo</label>
+                            <div class="vehicle-grid">
+                                <div class="vehicle-card" data-vehicle="economico">
+                                    <div class="vehicle-icon">🚗</div>
+                                    <h4>Económico</h4>
+                                    <p>$50/día</p>
+                                </div>
+                                <div class="vehicle-card" data-vehicle="premium">
+                                    <div class="vehicle-icon">🏎️</div>
+                                    <h4>Premium</h4>
+                                    <p>$120/día</p>
+                                </div>
+                                <div class="vehicle-card" data-vehicle="electrico">
+                                    <div class="vehicle-icon">⚡</div>
+                                    <h4>Eléctrico</h4>
+                                    <p>$80/día</p>
+                                </div>
+                                <div class="vehicle-card" data-vehicle="suv">
+                                    <div class="vehicle-icon">🚙</div>
+                                    <h4>SUV</h4>
+                                    <p>$90/día</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Date Selection -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="pickup-date" class="form-label">Fecha de Recogida</label>
+                                <input type="date" id="pickup-date" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="return-date" class="form-label">Fecha de Devolución</label>
+                                <input type="date" id="return-date" class="form-input" required>
+                            </div>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="pickup-location" class="form-label">Lugar de Recogida</label>
+                                <select id="pickup-location" class="form-select" required>
+                                    <option value="">Seleccionar ubicación</option>
+                                    <option value="aeropuerto">Aeropuerto Internacional</option>
+                                    <option value="centro">Centro de la Ciudad</option>
+                                    <option value="norte">Zona Norte</option>
+                                    <option value="sur">Zona Sur</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="return-location" class="form-label">Lugar de Devolución</label>
+                                <select id="return-location" class="form-select" required>
+                                    <option value="">Seleccionar ubicación</option>
+                                    <option value="aeropuerto">Aeropuerto Internacional</option>
+                                    <option value="centro">Centro de la Ciudad</option>
+                                    <option value="norte">Zona Norte</option>
+                                    <option value="sur">Zona Sur</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Customer Information -->
+                        <div class="customer-info">
+                            <h4 class="section-title">Información del Cliente</h4>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="first-name" class="form-label">Nombre</label>
+                                    <input type="text" id="first-name" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="last-name" class="form-label">Apellido</label>
+                                    <input type="text" id="last-name" class="form-input" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" id="email" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Teléfono</label>
+                                    <input type="tel" id="phone" class="form-input" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="license" class="form-label">Número de Licencia</label>
+                                <input type="text" id="license" class="form-input" required>
+                            </div>
+                        </div>
+
+                        <!-- Summary -->
+                        <div class="reservation-summary">
+                            <h4 class="section-title">Resumen de Reserva</h4>
+                            <div class="summary-content">
+                                <div class="summary-item">
+                                    <span>Vehículo:</span>
+                                    <span id="selected-vehicle">No seleccionado</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span>Días:</span>
+                                    <span id="total-days">0</span>
+                                </div>
+                                <div class="summary-item total">
+                                    <span>Total:</span>
+                                    <span id="total-price">$0</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="submit-btn">
+                            <span>Confirmar Reserva</span>
+                            <div class="btn-glow"></div>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 FutureRent. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Basic form interaction
+        document.addEventListener('DOMContentLoaded', function() {
+            const vehicleCards = document.querySelectorAll('.vehicle-card');
+            const selectedVehicleSpan = document.getElementById('selected-vehicle');
+            const totalDaysSpan = document.getElementById('total-days');
+            const totalPriceSpan = document.getElementById('total-price');
+            const pickupDate = document.getElementById('pickup-date');
+            const returnDate = document.getElementById('return-date');
+            
+            let selectedVehicle = null;
+            const vehiclePrices = {
+                'economico': 50,
+                'premium': 120,
+                'electrico': 80,
+                'suv': 90
+            };
+
+            // Vehicle selection
+            vehicleCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    vehicleCards.forEach(c => c.classList.remove('selected'));
+                    this.classList.add('selected');
+                    selectedVehicle = this.dataset.vehicle;
+                    selectedVehicleSpan.textContent = this.querySelector('h4').textContent;
+                    calculateTotal();
+                });
+            });
+
+            // Date change listeners
+            pickupDate.addEventListener('change', calculateTotal);
+            returnDate.addEventListener('change', calculateTotal);
+
+            function calculateTotal() {
+                if (selectedVehicle && pickupDate.value && returnDate.value) {
+                    const pickup = new Date(pickupDate.value);
+                    const returnD = new Date(returnDate.value);
+                    const days = Math.ceil((returnD - pickup) / (1000 * 60 * 60 * 24));
+                    
+                    if (days > 0) {
+                        totalDaysSpan.textContent = days;
+                        const total = days * vehiclePrices[selectedVehicle];
+                        totalPriceSpan.textContent = `$${total}`;
+                    }
+                }
+            }
+
+            // Form submission
+            document.getElementById('reservationForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('¡Reserva confirmada! Recibirás un email de confirmación.');
+            });
+        });
+    </script>
+</body>
+</html>
