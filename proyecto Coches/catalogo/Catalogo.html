@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo Coches</title>
+      <link rel="stylesheet" href="/reserva-coches/proyecto Coches/catalogo/catalogostyle.css">
+
+</head>
+
+<!--inicio navbar-->
+
+  <header>
+    <div class="header-container">
+      <img src="logo.png" alt="Rentafacil Logo" class="logo" />
+      <nav>
+        <ul class="nav-links">
+          <li><a href="/reserva-coches/proyecto Coches/CARROS.html">Inicio</a></li>
+          <li><a href="/reserva-coches/proyecto Coches/catalogo/Catalogo.html">Catálogo</a></li>
+          <li><a href="/reserva-coches/proyecto Coches/Reservas.html">Reservar</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="Menú móvil">☰</button>
+    </div>
+  </header>
+
+<!-- fin navbar-->
+
+
+<body>
+    
+    <!--inicio carrusel-->
+  <div class="carousel">
+    <div class="carousel-track">
+      <img src="https://www.elcarrocolombiano.com/wp-content/uploads/2021/02/20210208-TOP-75-CARROS-MAS-VENDIDOS-DE-COLOMBIA-EN-ENERO-2021-01.jpg" class="carousel-slide" alt="">
+      <img src="https://st1.uvnimg.com/d4/4a/006304a74db4902c0b4d8d8026c8/chevrolet-corvette-c8-stingray-2020-1280-08.jpg" class="carousel-slide" alt="">
+      <img src="https://autolab.com.co/wp-content/uploads/2021/07/volkswagen-escarabajo.jpg" class="carousel-slide" alt="">
+  
+    </div>
+
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+  </div>
+    <!--fin carrusel-->
+
+    <!--inicio cartas-->
+
+    <div class="card-container">
+
+      <!--CARTA 1-->
+    <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://autoamerica.com.co/wp-content/uploads/2020/08/Corolla-sedan-GR-S.png" alt="Toyota Corolla">
+          <h3>Toyota Corolla</h3>
+          <p>Toyota</p>
+        </div>
+        <div class="card-back">
+          <h3>Toyota Corolla</h3>
+          <ul>
+            <li>Año: 2022</li>
+            <li>Motor: 1.8L</li>
+            <li>Combustible: Gasolina</li>
+            <li>Transmisión: Automática</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--CARTA 1-->
+
+    <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://loscoches.com/wp-content/uploads/2022/01/honda-civic-type-r-deportivo.jpg" alt="Honda Civic">
+          <h3>Honda Civic</h3>
+          <p>Honda</p>
+        </div>
+        <div class="card-back">
+          <h3>Honda Civic</h3>
+          <ul>
+            <li>Año: 2021</li>
+            <li>Motor: 2.0L</li>
+            <li>Combustible: Gasolina</li>
+            <li>Transmisión: Manual</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--CARTA 1-->
+
+    <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://www.chevrolet.com.co/content/dam/chevrolet/south-america/colombia/espanol/index/cars/2020-onix-turbo-hb/unification-onix-hb-rs/colorizer/rs/blanco.png?imwidth=960" alt="Chevrolet Onix">
+          <h3>Chevrolet Onix</h3>
+          <p>Chevrolet</p>
+        </div>
+        <div class="card-back">
+          <h3>Chevrolet Onix</h3>
+          <ul>
+            <li>Año: 2023</li>
+            <li>Motor: 1.2L Turbo</li>
+            <li>Combustible: Gasolina</li>
+            <li>Transmisión: Automática</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--CARTA 1-->
+
+    <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://www.ford.es/content/dam/guxeu/rhd/central/cars/2021-focus/dse/column-cards/ford-focus-eu-Column_Card_Focus-ST-3x2-1000x667-mean-green-front-view.jpg" alt="Ford Focus">
+          <h3>Ford Focus</h3>
+          <p>Ford</p>
+        </div>
+        <div class="card-back">
+          <h3>Ford Focus</h3>
+          <ul>
+            <li>Año: 2020</li>
+            <li>Motor: 1.5L</li>
+            <li>Combustible: Diésel</li>
+            <li>Transmisión: Manual</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--CARTA 5-->
+
+    <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="https://autolab.com.co/wp-content/uploads/2022/06/kia-rio-2018-cuarta-generacion-02.jpg" alt="Kia Rio">
+          <h3>Kia Rio</h3>
+          <p>Kia</p>
+        </div>
+        <div class="card-back">
+          <h3>Kia Rio</h3>
+          <ul>
+            <li>Año: 2022</li>
+            <li>Motor: 1.4L</li>
+            <li>Combustible: Gasolina</li>
+            <li>Transmisión: Automática</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+    <script src="catalogoscript.js"></script>
+</body>
+
+</html>
