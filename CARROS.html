@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rentafacil | Alquiler de Autos de Lujo</title>
+  <link rel="stylesheet" href="styles1.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <img src="logo.png" alt="Rentafacil Logo" class="logo" />
+      <nav>
+<ul class="nav-links">
+          <li><a href="http://127.0.0.1:5500/INICIO/CARROS.html">Inicio</a></li>
+          <li><a href="http://127.0.0.1:5500/CATALOGO/catalogo.html">Catálogo</a></li>
+          <li><a href="http://127.0.0.1:5500/RESERVAS/reservas.html">Reservar</a></li>
+        </ul>
+</nav>
+      <button class="hamburger" aria-label="Menú móvil">☰</button>
+    </div>
+  </header>
+
+  <button class="dark-toggle" onclick="toggleDarkMode()">🌙 Modo Oscuro</button>
+
+  <main>
+    <section class="hero">
+      <h1>Rentafacil</h1>
+      <p>Autos de lujo para cada ocasión</p>
+      <a href="#vehicles" class="btn">Explorar Vehículos</a>
+    </section>
+
+    <section class="intro-video">
+      <video autoplay muted loop playsinline>
+        <source src="intro.mp4" type="video/mp4">
+        Tu navegador no soporta el video HTML5.
+      </video>
+    </section>
+
+    <section id="about" class="about">
+      <h2>¿Quiénes somos?</h2>
+      <p>En renta facil ofrecemos vehículos premium media y baja gama con atención personalizada, servicio profesional y enfoque en calidad. ¡Disfruta de la experiencia Rentafacil!
+        tambien contamos con asesoria personalizada con uno de nuestros agentes
+      </p>
+    </section>
+
+    <section id="vehicles" class="vehicles">
+      <h2>Vehículos Disponibles</h2>
+      <div class="vehicle-grid">
+        <div class="vehicle-card">
+          <img src="economico.png" alt="Auto Económico" />
+          <h3>Auto Económico</h3>
+          <p>$25/día</p>
+        </div>
+        <div class="vehicle-card">
+          <img src="familiar.jpg" alt="SUV Familiar" />
+          <h3>SUV Familiar</h3>
+          <p>$40/día</p>
+        </div>
+        <div class="vehicle-card">
+          <img src="4x4.jpg" alt="Camioneta 4x4" />
+          <h3>Camioneta 4x4</h3>
+          <p>$55/día</p>
+        </div>
+        <div class="vehicle-card">
+          <img src="electrico.jpg" alt="Eléctrico" />
+          <h3>Eléctrico</h3>
+          <p>$55/día</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="certifications">
+      <h2>Certificaciones y Confianza</h2>
+      <div class="cert-grid">
+        <img src="certificado1.jpg" alt="Certificado 1" />
+        <img src="certificado2.png" alt="Certificado 2" />
+        <img src="certificado3.jpg" alt="Certificado 3" />
+      </div>
+    </section>
+
+    <section id="testimonios" class="testimonials">
+      <h2>Lo que dicen nuestros clientes</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <p>“Vehículos impecables, atención 10/10.”</p>
+          <span>— Laura M.</span>
+        </div>
+        <div class="testimonial">
+          <p>“Perfecto para mis viajes de negocios.”</p>
+          <span>— Andrés G.</span>
+        </div>
+        <div class="testimonial">
+          <p>“Fácil de reservar, excelente calidad.”</p>
+          <span>— Camilo R.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="map-section">
+      <h2>Cobertura Geográfica</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.803345722773!2d-74.06780308521875!3d4.626627796645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a7d3f3f3f3f%3A0x7e7e7e7e7e7e7e7e!2sCra.%207%20%2336-58%2C%20Bogot%C3%A1%2C%20Colombia!5e0!3m2!1ses!2sus!4v1635781234567" width="100%" height="400" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    
+
+  <footer id="contacto">
+    <p>© 2025 Rentafacil. Todos los derechos reservados.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </footer>
+
+  <a href="https://steady-crepe-9612d1.netlify.app/" class="chat-button">💬 Chatea con un asesor</a>
+  <script src="scripts.js"></script>
+</body>
+</html>
